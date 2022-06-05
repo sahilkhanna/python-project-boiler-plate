@@ -1,1 +1,2 @@
-from .bar import Bar
+from .bar.bar import Bar
+from .foo.foo import Foo
