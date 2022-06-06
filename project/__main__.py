@@ -1,7 +1,8 @@
 if __name__ == "__main__" and __package__ is None:
-    print("Called from __main__.py as script")
     import sys
     import pathlib
+    import os
+    print("Called from __main__.py as script cwd = {}".format(os.getcwd()))
     sys.path.append(str(pathlib.Path(__file__).parent.parent.resolve()))
 
     __package__ = "project"
